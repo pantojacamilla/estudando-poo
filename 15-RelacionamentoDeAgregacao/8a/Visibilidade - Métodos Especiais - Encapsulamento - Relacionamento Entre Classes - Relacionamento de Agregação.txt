@@ -1,0 +1,86 @@
+VISIBILIDADES
+
++ (público)   - A classe atual e todas as outras classe tem acesso
+- (privado)   - Somente a classe atual tem acesso
+# (protegido) - Dá acesso a classe atual e todas as suas subclasses (Só a mãe e seus filhos)
+
+
+Anotações:
+Classe mãe é o arquivo no qual a classe está escrita ex: Classe.php
+
+--------------------------------------------------------------------------------------------
+MÉTODOS ESPECIAIS
+
+Métodos Acessores
+    - Getters
+
+Métodos Modificadores / Mutantes
+* mais abstratos que os Getters
+    - Setters
+
+Método Construtor
+    - Contruct
+
+
+--------------------------------------------------------------------------------------------
+PILARES DA POO (ENCAPSULAMENTO)
+
+Sigla dos pilares: (Encapsulamento | Herança | Polimorfismo)
+
+Encapsular:
+ - Ocultar partes independentes da implementação, permintindo contruir partes invisíveis ao mundo externo.
+
+Mensagens:
+ - É a maneira de interagir com a capsula (objeto).
+
+Interface:
+ - Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com o objeto de uma classe.
+ - (Comunicação com o meio externo).
+
+Vantagens Encapsulamento:
+ - Tornar mudanças invisíveis.
+ - Facilitar a reutilização de código.
+ - Reduzir efeitos colaterais.  
+
+Como Encapsular: 
+ - Criar uma interface.
+   - Interfaces NÃO tem atributos, apenas métodos.
+   - Os métodos presentes na interface são chamados de métodos abstratos ou seja NÃO serão desenvolvidos (implementados) na interface.
+   - De forma geral os métodos definidos em uma interface são PÚBLICOS, pois a interface PRECISA ser visível do lado de fora.
+
+ - Definir a classe
+  - Todos os atributos são PRIVADOS ou PROTEGIDOS mas NUCA públicos.
+  - Para que uma classe possa utlizar a interface é preciso adicionar (implements nomeDaInterface) na declaração da classe, 
+    isso quer dizer que a classe em questão terá como métodos os mesmo presentes na interface.
+  - Adições dos métodos especiais.
+
+
+--------------------------------------------------------------
+RELACIONAMENTO ENTRE CLASSES
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------
+RELACIONAMENTO DE AGREGAÇÃO
+ 
+ - A agregação é conhecida como um tipo de relacionamento "tem 1".
+  - Ex: A clase "B" tem um atributo pertencente a classe "A";	
+
+Tipo abstratos de dados:
+ - Transforma as classes em tipos.
+ - Tipos abstratos também podem ser usados como parâmentros.
+
+
+
+
+
+
+
+
+

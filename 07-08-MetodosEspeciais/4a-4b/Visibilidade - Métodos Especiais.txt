@@ -1,0 +1,23 @@
+VISIBILIDADES
+
++ (público)   - A classe atual e todas as outras classe tem acesso
+- (privado)   - Somente a classe atual tem acesso
+# (protegido) - Dá acesso a classe atual e todas as suas subclasses (Só a mãe e seus filhos)
+
+
+Anotações:
+Classe mãe é o arquivo no qual a classe está escrita ex: Classe.php
+
+
+MÉTODOS ESPECIAIS
+
+Métodos Acessores
+    - Getters
+
+Métodos Modificadores / Mutantes
+* mais abstratos que os Getters
+    - Setters
+
+Método Construtor
+    - Contruct
+

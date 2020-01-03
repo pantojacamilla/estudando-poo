@@ -1,0 +1,120 @@
+PHP É UMA LINGUAGEM BASEADA EM CLASSES
+PESQUISAR QUAIS POLIMORFISMOS SÃO ACEITOS PELO PHP
+
+Coisas que eu tenho (atributos)
+Coisas que eu faço (métodos)
+VISIBILIDADES
+
++ (público)   - A classe atual e todas as outras classe tem acesso
+- (privado)   - Somente a classe atual tem acesso
+# (protegido) - Dá acesso a classe atual e todas as suas subclasses (Só a mãe e seus filhos)
+
+
+Anotações:
+Classe mãe é o arquivo no qual a classe está escrita ex: Classe.php
+
+--------------------------------------------------------------------------------------------
+MÉTODOS ESPECIAIS
+
+Métodos Acessores
+    - Getters
+ 
+Métodos Modificadores / Mutantes   
+* mais abstratos que os Getters
+    - Setters
+
+Método Construtor
+    - Contruct
+
+
+--------------------------------------------------------------------------------------------
+PILARES DA POO (ENCAPSULAMENTO)
+
+Sigla dos pilares: (Encapsulamento | Herança | Polimorfismo)
+
+Encapsular:
+ - Ocultar partes independentes da implementação, permintindo contruir partes invisíveis ao mundo externo.
+
+Mensagens:
+ - É a maneira de interagir com a capsula (objeto).
+
+Interface:
+ - Lista de serviços fornecidos por um componente. É o contato com o mundo exterior, que define o que pode ser feito com o objeto de uma classe.
+ - (Comunicação com o meio externo).
+
+Vantagens Encapsulamento:
+ - Tornar mudanças invisíveis.
+ - Facilitar a reutilização de código.
+ - Reduzir efeitos colaterais.  
+
+Como Encapsular: 
+ - Criar uma interface.
+   - Interfaces NÃO tem atributos, apenas métodos.
+   - Os métodos presentes na interface são chamados de métodos ABSTRATOS ou seja NÃO serão desenvolvidos (implementados) na interface.
+   - De forma geral os métodos definidos em uma interface são PÚBLICOS, pois a interface PRECISA ser visível do lado de fora.
+
+ - Definir a classe
+  - Todos os atributos são PRIVADOS ou PROTEGIDOS mas NUCA públicos.
+  - Para que uma classe possa utlizar a interface é preciso adicionar (implements nomeDaInterface) na declaração da classe, 
+    isso quer dizer que a classe em questão terá como métodos os mesmo presentes na interface.
+  - Adições dos métodos especiais.
+
+
+--------------------------------------------------------------
+RELACIONAMENTO ENTRE CLASSES
+
+
+
+---------------------------------------------------------------
+RELACIONAMENTO DE AGREGAÇÃO
+ 
+ - A agregação é conhecida como um tipo de relacionamento "tem 1".
+  - Ex: A clase "B" tem um atributo pertencente a classe "A";	
+
+Tipo abstratos de dados:
+ - Transforma as classes em tipos.
+ - Tipos abstratos também podem ser usados como parâmentros.
+
+---------------------------------------------------------------
+HERANÇA (parte 1, parte 2)
+ - Permite basear uma nova classe na definição de uma outra classe  previamente existente.
+
+ - Classe Mãe (Progenitora, Superclasse)
+ - Classe Filha (subclasses)
+
+NAVEGAÇÃO PELA HERANÇA
+ - Classes que NÃO tem filhas são chamadas de FOLHAS. 
+ - Quando a árvore é percorrida da raiz até as volhas nos chamados de ESPECIFICAÇÃO.
+ - Quando a árvore é percorrida das folhas até a raiz nós chamamos de GENERALIZAÇÃO.
+
+Tipos de Herança:
+ - Herança de Implementação (herança pobre)
+  - Serve para implementar uma classe abstrata.
+ - Herança para Diferença
+  - Pega as caracteristicas da mãe e i mplementa outras características.
+
+Abstrato
+ - Uma CLASSE abstrata NÃO pode ser instanc4iada. Só serve como progenitora. 
+ - Método abstrato é declarado, mas não implementado na progenitora.
+  - Métodos abstratos só podem se colocados dentro de interfaces ou classes abstratas.
+
+Final
+ - Uma CLASSE final NÃO pode ser herdada (não poder ter filhos) por outras classes. É obrigatórimente folha.
+ - Método final NÃO pode ser sobrescrito por suas subclasses. É obrigatóriamente herdado.
+
+-----------------------------------------------------------------
+POLIMORFISMO (MUITAS FORMAS) 
+
+ - Permite que um mesmo nome represente vários comportamentos diferentes.
+
+Assinatura do método
+ - Quantidades e os tipos dos parâmetros
+
+Tipos de Polimorfismo
+ - Sobreposição: Consiste em utilizar a mesma assinatura em métodos de Classes diferentes.
+  - Acontece quando substituímos um métodos de uma superclasse na sua subclasse, usando a mesma assinatura.
+  - Override so pode acontecer uma vez em cada classe.
+
+ - Sobrecarga: Método com o mesmo nome, assinaturas diferentes, na mesma classe
+  - Possuí assinaturas de métodos diferentes
+

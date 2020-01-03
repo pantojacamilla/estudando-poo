@@ -1,9 +1,9 @@
 <?php
 
     abstract class Animal{
-        private $peso;
-        private $idade;
-        private $membros;
+        protected $peso;
+        protected $idade;
+        protected $membros;
 
         // Métodos abstratos
         abstract public function locomover();
